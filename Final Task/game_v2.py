@@ -25,15 +25,10 @@ def random_predict(number: int=1)-> int:
             break # выход из цикла если угадали
         elif number > predict:
             min = predict
-            print(f"Угадываемое число больше {predict}")
-            print(f'Алгоритм бинарного поиска рекомендует вам число:{round((max + min) / 2)}')
         elif number < predict:
             max = predict
-            print(f"Угадываемое число меньше {predict}")
-            print(f'Алгоритм бинарного поиска рекомендует вам число:{round((max+min)/2)}')
         elif count >20:
             break
-    print(f"Вы угадали число {number} за {count} попыток.")
     return count
 
 def score_game(random_predict) -> int:
