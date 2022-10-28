@@ -15,9 +15,8 @@ def random_predict(number: int=1)-> int:
         int: Число попыток
     """
     count = 0
-    print("Загадано число от 1 до 100")
-    min = 0
-    max = 100
+    min = 0 # Задаем нижнюю границу
+    max = 100 # Задаем верхнюю границу
     while True:
         predict = round((min+max)/2) # предполагаемое число
         count += 1
